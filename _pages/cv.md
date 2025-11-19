@@ -4,19 +4,11 @@ title: "个人简历 CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
----
-
-{% include base_path %}
-高健硕 ---
-layout: archive
-title: "个人简历 CV"
-permalink: /cv/
-author_profile: true
-redirect_from:
   - /resume
 ---
 
 {% include base_path %}
+
 
 # 高健硕 Jianshuo Gao  
 物理学院本科生 · 北京大学
