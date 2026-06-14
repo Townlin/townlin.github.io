@@ -61,6 +61,7 @@ body.lang-en .lang-block.lang-en {
 .language-switcher {
   display: inline-flex;
   align-items: center;
+  flex: 0 0 auto;
   gap: 0.25rem;
   margin-left: 0.5rem;
   white-space: nowrap;
