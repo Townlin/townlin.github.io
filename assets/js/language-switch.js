@@ -36,7 +36,8 @@
 
     var buttons = document.querySelectorAll("[data-lang-switch]");
     buttons.forEach(function (button) {
-      button.addEventListener("click", function () {
+      button.addEventListener("click", function (event) {
+        event.preventDefault();
         var nextLanguage = button.getAttribute("data-lang-switch");
         storeLanguage(nextLanguage);
         applyLanguage(nextLanguage);
