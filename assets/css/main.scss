@@ -39,3 +39,50 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.lang-inline.lang-en,
+.lang-block.lang-en {
+  display: none;
+}
+
+body.lang-en .lang-inline.lang-zh,
+body.lang-en .lang-block.lang-zh {
+  display: none;
+}
+
+body.lang-en .lang-inline.lang-en {
+  display: inline;
+}
+
+body.lang-en .lang-block.lang-en {
+  display: block;
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
+.language-switcher__button {
+  border: 1px solid mix(#fff, #000, 72%);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.72em;
+  line-height: 1;
+  padding: 0.32rem 0.48rem;
+}
+
+.language-switcher__button:hover,
+.language-switcher__button:focus,
+.language-switcher__button.is-active {
+  border-color: #3d4144;
+  background: #3d4144;
+  color: #fff;
+  outline: none;
+}

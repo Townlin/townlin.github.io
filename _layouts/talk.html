@@ -26,16 +26,19 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{% include lang-title.html item=page %}</h1>{% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
         {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i><span class="lang-inline lang-zh">日期：</span><span class="lang-inline lang-en">Date:</span></strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
         {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i><span class="lang-inline lang-zh">日期：</span><span class="lang-inline lang-en">Date:</span></strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+        {% if page.talk_type or page.venue %}<p>
+          <span class="lang-inline lang-zh">{{ page.type_zh | default: page.talk_type | default: page.type }}</span><span class="lang-inline lang-en">{{ page.type_en | default: page.talk_type | default: page.type }}</span>
+          <span class="lang-inline lang-zh">，{{ page.venue_zh | default: page.venue }}，{{ page.location_zh | default: page.location }}</span><span class="lang-inline lang-en"> at {{ page.venue_en | default: page.venue }}, {{ page.location_en | default: page.location }}</span>
+        </p>{% endif %}
 
         </header>
       {% endunless %}
