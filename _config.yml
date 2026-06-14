@@ -8,7 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "高健硕主页 Homepage"
+title                    : "高健硕主页"
+title_zh                 : "高健硕主页"
+title_en                 : "Jianshuo Gao"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -22,11 +24,19 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "头像.jpeg"
-  name             : "高健硕 Jianshuo Gao"
+  name             : "高健硕"
+  name_zh          : "高健硕"
+  name_en          : "Jianshuo Gao"
   pronouns         : # example: "she/her"  
-  bio              : "北京大学物理学院2023级本科生 Undergraduate student of 2023 from School of Physics, PKU"
-  location         : "北京，中国 Beijing, China"
-  employer         : "北京大学 Peking University"
+  bio              : "北京大学物理学院2023级本科生"
+  bio_zh           : "北京大学物理学院2023级本科生"
+  bio_en           : "Undergraduate student, School of Physics, Peking University"
+  location         : "北京，中国"
+  location_zh      : "北京，中国"
+  location_en      : "Beijing, China"
+  employer         : "北京大学"
+  employer_zh      : "北京大学"
+  employer_en      : "Peking University"
   uri              : # URL
   email            : "2300011355@stu.pku.edu.cn" 
 
@@ -77,10 +87,16 @@ author:
 publication_category:
   books:
     title: 'Books'
+    title_zh: '书籍'
+    title_en: 'Books'
   manuscripts:
-    title: '期刊 Journal Articles'    
+    title: '期刊'
+    title_zh: '期刊'
+    title_en: 'Journal Articles'
   conferences:
-    title: '会刊 Conference Papers'
+    title: '会刊'
+    title_zh: '会刊'
+    title_en: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

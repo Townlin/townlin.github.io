@@ -1,6 +1,8 @@
 ---
 layout: archive
-title: "个人简历 CV"
+title: "个人简历"
+title_zh: "个人简历"
+title_en: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,89 +11,66 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="lang-block lang-zh" markdown="1">
 
-# 高健硕 Jianshuo Gao  
-物理学院本科生 · 北京大学
-Physics Undergraduate · Peking University  
+# 高健硕
 
----
+北京大学物理学院本科生
 
-## 关于我 About Me  
-一个有自驱力的北京大学物理学院2023级本科生，研究方向为**量子计算，量子信息，原子分子物理**。
-Motivated third-year physics student at Peking University focusing on **quantum computation, quantum information, and AMO physics**.  
-积极参加学生组织，研究项目与协调。
-Actively involved in student organizations, research projects, and event coordination.  
-目标是研究生研究机会，包括国际学术项目。
-Aiming for graduate-level research opportunities, including international academic programs.
+## 关于我
 
----
+我是北京大学物理学院 2023 级本科生，研究兴趣包括量子计算、量子信息和原子分子物理。我的目标是继续参与研究项目，并争取研究生阶段的国际学术机会。
 
-## 教育经历 Education  
+## 教育经历
 
-- **本科 B.Sc. in Physics (expected 2027)** — *北京大学 Peking University, Beijing, China*  
-- **高中 Senior High School (2023)** — *安阳市第一中学 No.1 High School of Anyang, Henan, China*
-- **初中 Junior High School (2020)** - *安阳市第八中学 No.1 High School of Anyang, Henan, China*
-- **小学 Primary School (2014)** - *安阳市三官庙小学 Sanguanmiao Primary School of Anyang, Henan, China*
+- **本科，物理学，预计 2027 年毕业** - 北京大学物理学院
+- **高中，2023 年毕业** - 河南省安阳市第一中学
+- **初中，2020 年毕业** - 河南省安阳市第八中学
+- **小学，2014 年毕业** - 河南省安阳市三官庙小学
 
----
+## 研究经历
 
-## 研究经历 Research Experience  
+### 香港城市大学暑期研究，2025 年 7 月至 8 月
 
-### 港城大暑研 2025.07–08 · Summer Research — City University of Hong Kong  
-**量子光学 Quantum Optics · Kowloon, Hong Kong**  
-- 研究激光加热Rb原子 Investigated laser heating of Rb atoms in a lab-built optical setup.  
-- 设计参考与实验光路 Designed both reference and experimental optical paths.  
-- 搭建AOM光路和配套实验设备 Implemented control sequences using AOMs.  
-- 分析多普勒增宽 Analyzed Doppler and line-broadening behavior in thermal vapor cells.
+**量子光学，香港九龙**
 
----
+- 研究自建光学系统中的 Rb 原子激光加热现象。
+- 设计参考光路与实验光路。
+- 搭建 AOM 光路及相关实验设备。
+- 分析热原子气室中的多普勒展宽和谱线展宽行为。
 
-## 课程作业和研究兴趣 Coursework & Academic Interests  
+## 课程作业和研究兴趣
 
-- **量子计算 Quantum Computation**  
-- **量子信息 Quantum Information**  
-- **原子分子物理 AMO Physics**  
+- 量子计算
+- 量子信息
+- 原子分子物理
 
-北大相关活动 Related electives taken at PKU with strong performance.
+## 获奖情况
 
----
+- **2022 年物理竞赛一等奖**
+  - 在学校教练资源有限的情况下自学，并取得校内第一。
 
-## 获奖情况 Awards  
+## 编程能力
 
-- **物理竞赛一等奖 2022 · Physics Olympiad — First Prize (China)**  
-  - 在无教练情况下自学 Self-studied due to limited school coaching; ranked first in school.  
+- C++
+- Python
+- LaTeX
+- Mathematica
+- Java
 
----
+## 社会实践和活动参与
 
-## 编程能力 Programming  
+- **2024 年**：为高中生做志愿讲座。
+- **2024 年**：参加北京大学运动会，获得 4 x 400 米接力银牌和 400 米铜牌。
 
-- **C++**  
-- **Python**  
-- **LaTeX**  
-- **Mathematica**  
-- **Java**  
+## 兴趣爱好
 
----
+- 滑板
+- 日常跑步
+- 周末徒步
+- 小提琴
 
-## 社会实践和活动参与Social Practice & Participation  
-
-- **2024** · 为高中生讲座 Volunteer teaching for high-school students  
-- **2024** · 北京大学运动会 PKU Sports Meet:  
-  - 接力银牌 4×400 m Relay — *Silver medal*  
-  - 400m铜牌 400 m Sprint — *Bronze medal*  
-
----
-
-## 兴趣爱好 Interests  
-
-- 滑板 Sketching  
-- 日常跑步 Daily running  
-- 周末徒步 Weekend hiking  
-- 小提琴 Violin  
-
----
-
-## 出版物 Publications  
+## 出版物
 
 <ul>
 {% for post in site.publications reversed %}
@@ -99,9 +78,7 @@ Aiming for graduate-level research opportunities, including international academ
 {% endfor %}
 </ul>
 
----
-
-## 讨论 Talks  
+## 讨论和展示
 
 <ul>
 {% for post in site.talks reversed %}
@@ -109,12 +86,97 @@ Aiming for graduate-level research opportunities, including international academ
 {% endfor %}
 </ul>
 
----
+## 联系方式
 
-## 联系方式 Contact  
+- **姓名：** 高健硕
+- **地址：** 北京，中国
+- **电话：** +86 185 1189 3566
+- **个人主页：** <https://townlin.github.io>
+- **GitHub：** <https://github.com/Townlin>
 
-- **姓名 Name:** 高健硕 (Jianshuo Gao)  
-- **地址 Location:** Beijing, China  
-- **电话 Phone:** +86 185 1189 3566  
-- **个人主页 Website:** <https://townlin.github.io>  
-- **GitHub:** <https://github.com/Townlin> Jianshuo GAO
+</div>
+
+<div class="lang-block lang-en" markdown="1">
+
+# Jianshuo Gao
+
+Physics undergraduate, Peking University
+
+## About Me
+
+I am a 2023 undergraduate student in the School of Physics at Peking University. My interests include quantum computation, quantum information, and atomic, molecular, and optical physics. I am looking for continued research experience and graduate-level international academic opportunities.
+
+## Education
+
+- **B.Sc. in Physics, expected 2027** - School of Physics, Peking University
+- **Senior High School, 2023** - No. 1 High School of Anyang, Henan, China
+- **Junior High School, 2020** - No. 8 High School of Anyang, Henan, China
+- **Primary School, 2014** - Sanguanmiao Primary School, Anyang, Henan, China
+
+## Research Experience
+
+### Summer Research, City University of Hong Kong, July to August 2025
+
+**Quantum optics, Kowloon, Hong Kong**
+
+- Investigated laser heating of Rb atoms in a lab-built optical setup.
+- Designed both reference and experimental optical paths.
+- Built AOM optical paths and supporting experimental equipment.
+- Analyzed Doppler and line-broadening behavior in thermal vapor cells.
+
+## Coursework and Academic Interests
+
+- Quantum computation
+- Quantum information
+- Atomic, molecular, and optical physics
+
+## Awards
+
+- **Physics Olympiad, First Prize, 2022**
+  - Self-studied with limited school coaching and ranked first in school.
+
+## Programming
+
+- C++
+- Python
+- LaTeX
+- Mathematica
+- Java
+
+## Social Practice and Activities
+
+- **2024**: Volunteer lecture for high-school students.
+- **2024**: Peking University Sports Meet, silver medal in the 4 x 400 m relay and bronze medal in the 400 m sprint.
+
+## Interests
+
+- Skateboarding
+- Daily running
+- Weekend hiking
+- Violin
+
+## Publications
+
+<ul>
+{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+</ul>
+
+## Talks
+
+<ul>
+{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html  %}
+{% endfor %}
+</ul>
+
+## Contact
+
+- **Name:** Jianshuo Gao
+- **Location:** Beijing, China
+- **Phone:** +86 185 1189 3566
+- **Website:** <https://townlin.github.io>
+- **GitHub:** <https://github.com/Townlin>
+
+</div>

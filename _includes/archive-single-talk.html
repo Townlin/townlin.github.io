@@ -6,12 +6,6 @@
   {% assign teaser = site.teaser %}
 {% endif %}
 
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
-
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -27,16 +21,22 @@
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{% include lang-title.html item=post %}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{% include lang-title.html item=post %}</a>
       {% endif %}
     </h2>
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">
+      <span class="lang-inline lang-zh">{{ post.type_zh | default: post.type }}</span><span class="lang-inline lang-en">{{ post.type_en | default: post.type }}</span>,
+      <span class="lang-inline lang-zh">{{ post.venue_zh | default: post.venue }}</span><span class="lang-inline lang-en">{{ post.venue_en | default: post.venue }}</span>,
+      <span class="lang-inline lang-zh">{{ post.location_zh | default: post.location }}</span><span class="lang-inline lang-en">{{ post.location_en | default: post.location }}</span>
+    </p>{% endif %}
+    {% if post.excerpt_zh or post.excerpt_en %}
+      <p class="archive__item-excerpt" itemprop="description"><span class="lang-inline lang-zh">{{ post.excerpt_zh | default: post.excerpt }}</span><span class="lang-inline lang-en">{{ post.excerpt_en | default: post.excerpt }}</span></p>
+    {% elsif post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
   </article>
 </div>

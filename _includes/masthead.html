@@ -6,15 +6,27 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg">
+            <a href="{{ base_path }}/">
+              <span class="lang-inline lang-zh">{{ site.title_zh | default: site.title }}</span><span class="lang-inline lang-en">{{ site.title_en | default: site.title }}</span>
+            </a>
+          </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item">
+              <a href="{{ domain }}{{ link.url }}">
+                <span class="lang-inline lang-zh">{{ link.title_zh | default: link.title }}</span><span class="lang-inline lang-en">{{ link.title_en | default: link.title }}</span>
+              </a>
+            </li>
           {% endfor %}
+          <li class="masthead__menu-item language-switcher" role="group" aria-label="Language switch">
+            <button type="button" class="language-switcher__button" data-lang-switch="zh" aria-pressed="true">中</button>
+            <button type="button" class="language-switcher__button" data-lang-switch="en" aria-pressed="false">EN</button>
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>

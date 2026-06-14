@@ -1,48 +1,48 @@
 ---
 permalink: /
-title: "关于我 About me"
+title: "关于我"
+title_zh: "关于我"
+title_en: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-我是北京大学物理学院2023级本科生，我的研究兴趣包括量子计算，量子模拟。
+<div class="lang-block lang-zh" markdown="1">
 
-I'm an undergrduate student from School of Physics, Peking University. My research interest includes quantum computation and quantum simulation( especially the physical realization of quantum computation).
+我是北京大学物理学院 2023 级本科生，主要关注量子计算、量子信息和量子模拟，也对量子计算的物理实现很感兴趣。
 
+## 这个主页
 
+这个个人学术主页 fork 自 GitHub 上的 Academic Pages 模板。它最初是在 2024 年 12 月 31 日搭起来的，现在仍在持续整理和更新。
 
-一个正在搭建的个人学术主页 A self scholar-page in building
-======
-我在2024年12月31日突然想到要做一个自己的主页，于是马上着手，fork自GitHub上academicpage的仓库。
+## 这里有什么
 
-It occured to me that I wanted to build my own scholar-page on December 31, 2024, so I took action right away. This page is forked from academicpage on GitHub.
+1. 主页目前还在建设中，我会继续补充研究、课程、报告和一些日常记录。
+2. 论文栏目会放研究论文、预印本和重要课程作业。
+3. 讲座栏目收集我的组会、讨论课和报告幻灯片，点进条目后可以下载对应 PDF。
+4. 项目与文件栏目会放一些阅读材料、课程资料和临时整理的文件。
+5. 文章栏目更多是随笔和阶段性记录，暂时当作一个轻量笔记本。
+6. 简历会持续更新，用来集中展示教育经历、研究经历和相关技能。
 
+</div>
 
-这里有什么 What's here
-======
-1. 由于这个网页才刚刚起步，里面没有太多内容，我会不断在网页上更新内容，来让页面更加充实。
+<div class="lang-block lang-en" markdown="1">
 
-   Now that this page is on halfway, there's not much content. I will continuously upload to enrich it.
-2. 因为我暂时没时间去学习更多的网页技术，所以我没办法给主页加上中英文切换的功能，就只好手动给每条信息都列上中英文（虽然这样看上去非常愚蠢），并且由于我的英语水平有限，很可能充斥着语法错误。
+I am a 2023 undergraduate student in the School of Physics at Peking University. My academic interests include quantum computation, quantum information, quantum simulation, and the physical realization of quantum computing.
 
-   For reason that I don't have enough time to master more web technology, I can't add language switch function on homepage. So I have to manually list both Chinese and English (though reaaly stupid), and due to my poor English level, it could be filled with grammar mistakes.
-3. 目前我还没有出版的论文或书籍，以后如果我有了发表的机会，我将更新在出版物栏目。
+## This Website
 
-   I still don't have any published paper or book, if I do in the future, I will update them in Publications Column.
-4. 讨论栏目里罗列的是我的组会或讨论课幻灯片/文档，点进去以后有下载链接。
-   
-   Talks Column contains slides of my conference or talk-class, you can get a download link after click in.
-6. 我还没有想好文件夹放些什么东西，可能会变成我的云文件夹吧。
+This personal academic homepage is forked from the Academic Pages template on GitHub. I first set it up on December 31, 2024, and I am still organizing and updating it.
 
-   I don't have any idea what to store in Portfolio Column, maybe it will become my next iCloud.
-7. 我不知道大家都拿博客发些什么，可能我会发一些碎碎念，日常之类的东西，纯当做记事本了。
+## What Is Here
 
-   I don't how others take Blog Posts, I would post some chattering, something concerned with my everyday life. Just a notebook.
-8. 简历还在不断更新，目前只是个模版罢了。
+1. The site is still under construction, and I will continue adding research updates, coursework, talks, and occasional notes.
+2. The Publications page collects research papers, preprints, and selected coursework.
+3. The Talks page lists slides from group meetings, seminars, and presentations, with PDF downloads available on each talk page.
+4. The Portfolio page stores selected reading materials, course files, and other organized documents.
+5. The Blog page is mostly for short reflections and periodic notes.
+6. The CV page is kept as a compact record of my education, research experience, and skills.
 
-   CV is still on its way, it's only a template now.
-9. 导览是给我看的。
-
-   The Guide Column is for me.
+</div>

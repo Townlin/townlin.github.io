@@ -6,12 +6,6 @@
   {% assign teaser = site.teaser %}
 {% endif %}
 
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
-
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -28,9 +22,9 @@
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.link }}">{% include lang-title.html item=post %}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{% include lang-title.html item=post %}</a>
       {% endif %}
     </h2>
     
@@ -39,31 +33,41 @@
     {% endif %}
 
         {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>
+            <span class="lang-inline lang-zh">{{ post.type_zh | default: post.type }}</span><span class="lang-inline lang-en">{{ post.type_en | default: post.type }}</span>,
+            <i><span class="lang-inline lang-zh">{{ post.venue_zh | default: post.venue }}</span><span class="lang-inline lang-en">{{ post.venue_en | default: post.venue }}</span></i>,
+            {{ post.date | default: "1900-01-01" | date: "%Y" }}
+          </p>
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p>
+            <span class="lang-inline lang-zh">发表于</span><span class="lang-inline lang-en">Published in</span>
+            <i><span class="lang-inline lang-zh">{{ post.venue_zh | default: post.venue }}</span><span class="lang-inline lang-en">{{ post.venue_en | default: post.venue }}</span></i>,
+            {{ post.date | default: "1900-01-01" | date: "%Y" }}
+          </p>
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
+    {% if post.excerpt_zh or post.excerpt_en %}
+    <p class="archive__item-excerpt" itemprop="description"><span class="lang-inline lang-zh">{{ post.excerpt_zh | default: post.excerpt }}</span><span class="lang-inline lang-en">{{ post.excerpt_en | default: post.excerpt }}</span></p>
+    {% elsif post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> <span class="lang-inline lang-zh">继续阅读</span><span class="lang-inline lang-en">Read more</span></a></strong></p></p>
     {% endif %}
     
     {% if post.citation and post.paperurl and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p><span class="lang-inline lang-zh">推荐引用：</span><span class="lang-inline lang-en">Recommended citation: </span>{{ post.citation }}<br /><a href="{{ post.paperurl }}"><span class="lang-inline lang-zh">下载论文</span><span class="lang-inline lang-en">Download Paper</span></a> | <a href="{{ post.slidesurl }}"><span class="lang-inline lang-zh">下载幻灯片</span><span class="lang-inline lang-en">Download Slides</span></a></p>
     {% elsif post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
+      <p><span class="lang-inline lang-zh">推荐引用：</span><span class="lang-inline lang-en">Recommended citation: </span>{{ post.citation }}<br /><a href="{{ post.paperurl }}"><span class="lang-inline lang-zh">下载论文</span><span class="lang-inline lang-en">Download Paper</span></a></p>
     {% elsif post.citation and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p><span class="lang-inline lang-zh">推荐引用：</span><span class="lang-inline lang-en">Recommended citation: </span>{{ post.citation }}<br /><a href="{{ post.slidesurl }}"><span class="lang-inline lang-zh">下载幻灯片</span><span class="lang-inline lang-en">Download Slides</span></a></p>
     {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
+      <p><span class="lang-inline lang-zh">推荐引用：</span><span class="lang-inline lang-en">Recommended citation: </span>{{ post.citation }}</p>
     {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
+      <p><a href=" {{ post.paperurl }} "><span class="lang-inline lang-zh">下载论文</span><span class="lang-inline lang-en">Download Paper</span></a></p>
     {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p><a href="{{ post.slidesurl }}"><span class="lang-inline lang-zh">下载幻灯片</span><span class="lang-inline lang-en">Download Slides</span></a></p>
     {% endif %}
 
   </article>
