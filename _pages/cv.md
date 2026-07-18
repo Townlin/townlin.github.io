@@ -30,6 +30,14 @@ redirect_from:
 
 ## 研究经历
 
+### 法国高等光学研究所访问学生，2026 年 7 月至 9 月
+
+**快速 SLM 重排，法国巴黎-萨克雷**
+
+- 导师：Antoine Browaeys 教授。
+- 开发快速、神经网络辅助的 SLM 控制流程，用于光镊阵列的并行重排。
+- 将相机反馈与实时 SLM 硬件控制集成，目标是制备无缺陷的里德堡原子阵列。
+
 ### 香港城市大学暑期研究，2025 年 7 月至 8 月
 
 **量子光学，香港九龙**
@@ -38,6 +46,25 @@ redirect_from:
 - 设计参考光路与实验光路。
 - 搭建 AOM 光路及相关实验设备。
 - 分析热原子气室中的多普勒展宽和谱线展宽行为。
+
+## 精选课程成绩
+
+- 数学物理方法（I）：100/100
+- 量子信息：93/100
+- 线性代数（B）：91/100
+- 高级英语写作：91/100
+- 电动力学（A）：90/100
+- 热学：90/100
+- 电磁学：89/100
+- 计算概论（B）：88.5/100
+- 近代物理实验 I：88/100
+- 热力学与统计物理（A）：87/100
+- 数据结构与算法（B）：85/100
+- 量子力学讨论班：90/100
+- 激光实验：93/100
+- 材料物理：A+
+- 几何光学与光学仪器：A
+- 电子线路基础及实验（2）：89/100
 
 ## 课程作业和研究兴趣
 
@@ -115,6 +142,14 @@ I am a 2023 undergraduate student in the School of Physics at Peking University.
 
 ## Research Experience
 
+### Visiting Student Researcher, Institut d'Optique, July to September 2026
+
+**Fast SLM Rearrangement, Paris-Saclay, France**
+
+- Advisor: Prof. Antoine Browaeys.
+- Developing a fast, neural-network-assisted SLM control pipeline for parallel optical-tweezer rearrangement.
+- Integrating camera feedback with live SLM hardware control toward defect-free Rydberg-atom arrays.
+
 ### Summer Research, City University of Hong Kong, July to August 2025
 
 **Quantum optics, Kowloon, Hong Kong**
@@ -123,6 +158,25 @@ I am a 2023 undergraduate student in the School of Physics at Peking University.
 - Designed both reference and experimental optical paths.
 - Built AOM optical paths and supporting experimental equipment.
 - Analyzed Doppler and line-broadening behavior in thermal vapor cells.
+
+## Selected Course Grades
+
+- Methods of Mathematical Physics (I): 100/100
+- Quantum Information: 93/100
+- Linear Algebra (B): 91/100
+- Advanced English Writing: 91/100
+- Electrodynamics (A): 90/100
+- Thermal Physics: 90/100
+- Electromagnetism: 89/100
+- Introduction to Computation (B): 88.5/100
+- Modern Physics Laboratory I: 88/100
+- Thermodynamics & Statistical Physics (A): 87/100
+- Data Structures & Algorithms (B): 85/100
+- Seminar for Quantum Mechanics: 90/100
+- Laser Experiment: 93/100
+- Materials Physics: A+
+- Geometrical Optics and Optical Instruments: A
+- Fundamentals of Electronic Circuits & Experiments (2): 89/100
 
 ## Coursework and Academic Interests
 
