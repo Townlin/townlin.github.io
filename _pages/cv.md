@@ -32,11 +32,21 @@ redirect_from:
 
 ### 法国高等光学研究所访问学生，2026 年 7 月至 9 月
 
-**快速 SLM 重排，法国巴黎-萨克雷**
+**导师：Antoine Browaeys 教授 · 法国巴黎-萨克雷**
 
-- 导师：Antoine Browaeys 教授。
-- 开发快速、神经网络辅助的 SLM 控制流程，用于光镊阵列的并行重排。
-- 将相机反馈与实时 SLM 硬件控制集成，目标是制备无缺陷的里德堡原子阵列。
+**主要项目：光镊阵列的快速 SLM 重排**
+
+- 开发并部署 CNN 与三次狄利克雷 WGS 重排流程，结合光阱匹配及位置、相位轨迹生成，并与 Fast WGS 比较帧间光强变化。
+- 测量 SLM 衍射效率、温度相关响应时间和光强波动；同步 SLM 更新、AOM 门控与相机触发，通过频闪成像解析帧间动态。
+- 实现相机反馈均匀化，以全流程光强分布、变异系数（CV）及单光阱光强变化评估重排质量。
+- 采用 C++/CUDA 和异步传输，使计算与 SLM 显示重叠；三次狄利克雷方案在 30 次随机初态测试中，实现 **2,025 个光阱、22 帧序列的 38.7 ms 中位耗时**（从匹配开始至末帧写入确认）。
+
+[暑研报告：Fast SLM Rearrangement]({{ base_path }}/talks/2026-09-10-fast-slm-rearrangement/)
+
+**补充项目：热铷蒸气中的饱和吸收与光穿透**
+
+- 分析 7 个温度下的功率依赖透射数据，以及 96、147、203 °C 下的空间荧光剖面，拟合温度相关的光穿透尺度。
+- 推导均匀展宽与多普勒平均的吸收、传播模型，评估成像读出、拟合边界和探测下限带来的系统误差，并与平均场空间相分离理论作比较。
 
 ### 香港城市大学暑期研究，2025 年 7 月至 8 月
 
@@ -144,11 +154,21 @@ I am a 2023 undergraduate student in the School of Physics at Peking University.
 
 ### Visiting Student Researcher, Institut d'Optique, July to September 2026
 
-**Fast SLM Rearrangement, Paris-Saclay, France**
+**Advisor: Prof. Antoine Browaeys · Paris-Saclay, France**
 
-- Advisor: Prof. Antoine Browaeys.
-- Developing a fast, neural-network-assisted SLM control pipeline for parallel optical-tweezer rearrangement.
-- Integrating camera feedback with live SLM hardware control toward defect-free Rydberg-atom arrays.
+**Main project: fast SLM rearrangement of optical-tweezer arrays**
+
+- Developed and deployed CNN and three-iteration Dirichlet WGS workflows, incorporating trap matching and position/phase trajectories; compared frame-transition intensity dynamics against Fast WGS.
+- Characterized SLM diffraction efficiency, temperature-dependent response times and intensity fluctuations; synchronized SLM updates, AOM gating and camera triggers for stroboscopic imaging of frame transitions.
+- Implemented camera-feedback uniformization and evaluated full-sequence intensity distributions, coefficients of variation (CV) and individual-trap intensity traces.
+- Used C++/CUDA and asynchronous transfers to overlap computation with SLM display. The three-iteration Dirichlet workflow achieved a **38.7 ms median for 2,025 traps across 22 frames**, from matching to final SLM write acknowledgement, over 30 random initial loads.
+
+[Summer research presentation: Fast SLM Rearrangement]({{ base_path }}/talks/2026-09-10-fast-slm-rearrangement/)
+
+**Additional project: saturation-assisted light penetration in hot rubidium vapor**
+
+- Analyzed power-dependent transmission at seven temperatures and spatial fluorescence profiles at 96, 147 and 203 °C; fitted propagation models to quantify the temperature-dependent penetration scale.
+- Derived homogeneous and Doppler-averaged absorption and propagation models, assessed systematic effects from imaging readout, fit boundaries and detector limits, and compared observations with mean-field spatial phase-separation predictions.
 
 ### Summer Research, City University of Hong Kong, July to August 2025
 
