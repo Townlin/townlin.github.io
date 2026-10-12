@@ -141,7 +141,9 @@ redirect_from:
 
 <ul>
 {% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
+  {% unless post.exclude_from_cv %}
+    {% include archive-single-cv.html %}
+  {% endunless %}
 {% endfor %}
 </ul>
 
@@ -295,7 +297,9 @@ I am a physics undergraduate at Peking University, enrolled in 2023, with resear
 
 <ul>
 {% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
+  {% unless post.exclude_from_cv %}
+    {% include archive-single-cv.html %}
+  {% endunless %}
 {% endfor %}
 </ul>
 

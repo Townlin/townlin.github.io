@@ -4,6 +4,7 @@ title_zh: "从贝尔见证出发的复杂度感知理论检验"
 title_en: "Complexity-Aware Theory Testing from Bell Witnesses"
 collection: publications
 category: manuscripts
+exclude_from_cv: true
 permalink: /publication/2026-04-10-complexity-aware-theory-testing
 excerpt: "将贝尔统计强度与基于复杂度的模型选择联系起来，用于认证式理论检验。"
 excerpt_zh: "将贝尔统计强度与基于复杂度的模型选择联系起来，用于认证式理论检验。"
