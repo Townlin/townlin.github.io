@@ -13,6 +13,8 @@ redirect_from:
 
 我是北京大学物理学院 2023 级本科生，主要关注量子计算、量子信息和量子模拟，也对量子计算的物理实现很感兴趣。
 
+我在 Antoine Browaeys 教授指导下研究过光镊阵列的快速重排，项目详情见[研究经历](/cv/)。在量子纠错方向，我与合作者比较了 [GKP 码与两类量子低密度奇偶校验码级联后的纠错性能](/publication/2026-09-28-gkp-qldpc-benchmarks)。
+
 ## 这个主页
 
 这个个人学术主页基于 GitHub 上的 Academic Pages 模板搭建。它最初是在 2024 年 12 月 31 日搭起来的，现在仍在持续整理和更新。
@@ -31,6 +33,8 @@ redirect_from:
 <div class="lang-block lang-en" markdown="1">
 
 I am a 2023 undergraduate student in the School of Physics at Peking University. My academic interests include quantum computation, quantum information, quantum simulation, and the physical realization of quantum computing.
+
+I worked on fast optical-tweezer array rearrangement with Prof. Antoine Browaeys. My [CV](/cv/) describes the project. In quantum error correction, my coauthors and I [compared two families of quantum LDPC codes concatenated with GKP codes](/publication/2026-09-28-gkp-qldpc-benchmarks).
 
 ## This Website
 

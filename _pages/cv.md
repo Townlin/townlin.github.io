@@ -55,13 +55,6 @@ redirect_from:
 - 研究基于表面码的魔法态注入与蒸馏，分析魔法态工厂的整体资源开销。
 - 开发稳定子及量子线路层面的模拟，在噪声模型下进行资源估算。
 
-### 北京大学本科生科研助理：中性原子量子计算，2025 年至今
-
-**导师：Xiaoji Zhou 教授 · 北京大学电子学院**
-
-- 建模里德堡相互作用，分析主要的量子门误差及其物理机制。
-- 参与控制序列设计，支持性能基准测试和数据分析流程。
-
 ### 香港城市大学暑期研究，2025 年 7 月至 8 月
 
 **导师：Zhe-Yu (Jeff) Ou 教授 · 香港九龙**
@@ -73,6 +66,13 @@ redirect_from:
 - 搭建 AOM 光路及相关实验设备。
 - 分析热原子气室中的多普勒展宽和谱线展宽行为。
 - 完成实验系统调试、校准和初步测量，整理操作流程与实验结果。
+
+### 北京大学本科生科研助理：中性原子量子计算，2025 年至今
+
+**导师：Xiaoji Zhou 教授 · 北京大学电子学院**
+
+- 建模里德堡相互作用，分析主要的量子门误差及其物理机制。
+- 参与控制序列设计，支持性能基准测试和数据分析流程。
 
 ## 实验训练
 
@@ -211,13 +211,6 @@ I am a physics undergraduate at Peking University, enrolled in 2023, with resear
 - Study surface-code-based magic-state injection and distillation, including factory-level resource overhead.
 - Develop stabilizer and circuit-level simulations for resource estimation under noise models.
 
-### Undergraduate Research Assistant: Neutral-Atom Quantum Computing, 2025–present
-
-**Advisor: Prof. Xiaoji Zhou · School of Electronics, Peking University**
-
-- Model Rydberg interactions and the dominant physical mechanisms of gate errors.
-- Support control-sequence design, benchmarking and data-analysis workflows.
-
 ### Summer Research, City University of Hong Kong, July to August 2025
 
 **Advisor: Prof. Zhe-Yu (Jeff) Ou · Kowloon, Hong Kong**
@@ -229,6 +222,13 @@ I am a physics undergraduate at Peking University, enrolled in 2023, with resear
 - Built AOM optical paths and supporting experimental equipment.
 - Analyzed Doppler and line-broadening behavior in thermal vapor cells.
 - Commissioned the experimental setup, performed calibrations and preliminary measurements, and documented procedures and results.
+
+### Undergraduate Research Assistant: Neutral-Atom Quantum Computing, 2025–present
+
+**Advisor: Prof. Xiaoji Zhou · School of Electronics, Peking University**
+
+- Model Rydberg interactions and the dominant physical mechanisms of gate errors.
+- Support control-sequence design, benchmarking and data-analysis workflows.
 
 ## Laboratory and Experimental Training
 
