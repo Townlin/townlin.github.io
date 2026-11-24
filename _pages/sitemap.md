@@ -11,6 +11,7 @@ A list of pages and collections on the site. For you robots out there, there is 
 
 <h2>Pages</h2>
 {% for post in site.pages %}
+  {% if site.atom_feed.hide and post.url == "/feed.xml" %}{% continue %}{% endif %}
   {% include archive-single.html %}
 {% endfor %}
 
