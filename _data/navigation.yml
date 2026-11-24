@@ -21,10 +21,6 @@ main:
   #   title_zh: "授课"
   #   title_en: "Teaching"
   #   url: /teaching/
-  - title: "文章"
-    title_zh: "文章"
-    title_en: "Blog"
-    url: /year-archive/
   - title: "项目"
     title_zh: "项目"
     title_en: "Portfolio"
